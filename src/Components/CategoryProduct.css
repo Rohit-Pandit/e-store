@@ -1,0 +1,106 @@
+/* Base styles for CategoryProductItem */
+.category-product-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.category-product-item-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.category-product-item-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.category-product-item-title a:hover {
+  color: #007bff;
+}
+
+.category-product-item-image-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.category-product-item-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.category-product-item-info {
+  margin-bottom: 16px;
+}
+
+.category-product-item-info h1 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.category-product-item-info-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category-product-item-info-features ul li {
+  margin: 4px 0;
+  color: #666;
+}
+
+.category-product-item-finance {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-product-item-finance-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.category-product-item-info-stock {
+  color: #888;
+}
+
+.category-product-item-action {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.category-product-item-action button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-product-item-action button:first-of-type {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.category-product-item-action button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.category-product-item-action button:last-of-type {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.category-product-item-action button:last-of-type:hover {
+  background-color: #218838;
+}

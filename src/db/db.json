@@ -1,0 +1,306 @@
+{
+    "categories" : [
+        {"id" : 1, "title" : "Shoes"},
+        {"id" : 2, "title" : " Mobile"},
+        {"id" : 3, "title" : "Televisions"},
+        {"id" : 4, "title" : "Refrigerator"},
+        {"id" : 5, "title" : "Laptop"}  
+    ],
+    "products":[
+        
+        {
+            "id": 1,
+            "catId": 2,
+            "title": "Samsung Galaxy S23 Ultra",
+            "productCode": "S23U",
+            "image": "samsung_s23_ultra.jpg",
+            "price": 1299,
+            "sku": "SAMS23U123",
+            "description": "The Samsung Galaxy S23 Ultra is a powerful smartphone with a stunning display and amazing camera.",
+            "specs": {
+              "display": "6.8-inch Dynamic AMOLED 2X",
+              "storage": "12GB RAM, 512GB storage",
+              "camera": "200MP main camera"
+            },
+            "features": [
+              "S Pen support",
+              "Powerful Snapdragon processor",
+              "Long-lasting battery"
+            ],
+            "stock": 10
+          },
+          {
+            "id": 2,
+            "catId": 1,
+            "title": "Nike Air Max 90",
+            "productCode": "AM90",
+            "image": "nike_air_max_90.jpg",
+            "price": 120,
+            "sku": "NIKEAM90-RED",
+            "description": "Classic and comfortable, the Nike Air Max 90 is a timeless sneaker.",
+            "specs": {
+              "size": "Available in various sizes",
+              "color": "Red"
+            },
+            "features": [
+              "Air Max cushioning",
+              "Durable construction"
+            ],
+            "stock": 25
+          },
+          
+          {
+            "id": 3,
+            "catId": 2,
+            "title": "Apple iPhone 14 Pro Max",
+            "productCode": "IP14PM",
+            "image": "iphone_14_pro_max.jpg",
+            "price": 1199,
+            "sku": "IP14PM256GB",
+            "description": "The iPhone 14 Pro Max features advanced camera capabilities and A16 Bionic performance.",
+            "specs": {
+              "display": "6.7-inch Super Retina XDR",
+              "storage": "256GB storage",
+              "camera": "48MP main camera"
+            },
+            "features": [
+              "Dynamic Island",
+              "Always-On Display",
+              "Ceramic Shield"
+            ],
+            "stock": 15
+          },
+          {
+            "id": 4,
+            "catId": 4,
+            "title": "Haier Bottom Freezer Refrigerator",
+            "productCode": "HAIERBFR2025",
+            "image": "haier_bottom_freezer_fridge.jpg",
+            "price": 729,
+            "sku": "HAIER98765",
+            "description": "Haier's Bottom Freezer Refrigerator provides easy access to fresh food with its innovative design and energy efficiency.",
+            "specs": {
+              "capacity": "320 liters",
+              "type": "Bottom Freezer",
+              "energyRating": "3-star"
+            },
+            "features": [
+              "Twin Inverter Technology",
+              "Convertible Modes",
+              "360-degree Cooling"
+            ],
+            "stock": 12
+          },
+          {
+            "id": 5,
+            "catId": 5,
+            "title": "Dell XPS 15",
+            "productCode": "XPS15D2025",
+            "image": "dell_xps_15.jpg",
+            "price": 1999,
+            "sku": "DELLXPS15",
+            "description": "The Dell XPS 15 combines a sleek design, premium build quality, and powerful performance for all your computing needs.",
+            "specs": {
+              "processor": "Intel Core i7 13th Gen",
+              "display": "15.6-inch 4K UHD+ Touch",
+              "storage": "512GB SSD",
+              "ram": "16GB"
+            },
+            "features": [
+              "InfinityEdge Display",
+              "High-performance NVIDIA graphics",
+              "Long-lasting battery life"
+            ],
+            "stock": 15
+          },
+          {
+            "id": 6,
+            "catId": 1,
+            "title": "Adidas Ultraboost 22",
+            "productCode": "UB22",
+            "image": "adidas_ultraboost_22.jpg",
+            "price": 180,
+            "sku": "ADUB22-BLUE",
+            "description": "The Adidas Ultraboost 22 offers unmatched comfort and energy return for runners.",
+            "specs": {
+              "size": "Available in various sizes",
+              "color": "Blue"
+            },
+            "features": [
+              "Boost cushioning",
+              "Primeknit upper",
+              "Supportive heel counter"
+            ],
+            "stock": 30
+          },
+          
+          {
+            "id": 7,
+            "catId": 4,
+            "title": "LG Smart Inverter Refrigerator",
+            "productCode": "LGFRIDGE2025",
+            "image": "lg_smart_inverter_fridge.jpg",
+            "price": 899,
+            "sku": "LGFR12345",
+            "description": "The LG Smart Inverter Refrigerator is an energy-efficient appliance with a sleek design and advanced cooling technology.",
+            "specs": {
+              "capacity": "260 liters",
+              "type": "Double Door",
+              "energyRating": "4-star"
+            },
+            "features": [
+              "Smart Inverter Compressor",
+              "Door Cooling+ technology",
+              "Moist Balance Crisper"
+            ],
+            "stock": 15
+          },
+          {
+            "id": 8,
+            "catId": 5,
+            "title": "Apple MacBook Pro 16-inch",
+            "productCode": "MBP16M2025",
+            "image": "macbook_pro_16.jpg",
+            "price": 2499,
+            "sku": "APPLEMBP16",
+            "description": "The Apple MacBook Pro 16-inch delivers outstanding performance, stunning display, and long battery life for professionals.",
+            "specs": {
+            "processor": "Apple M2 Pro chip",
+            "display": "16-inch Liquid Retina XDR",
+            "storage": "1TB SSD",
+            "ram": "16GB"
+            },
+            "features": [
+            "Liquid Retina XDR Display",
+            "Advanced thermal architecture",
+            "Magic Keyboard with Touch ID"
+            ],
+            "stock": 8
+          },
+          {
+            "id": 9,
+            "catId": 2,
+            "title": "Google Pixel 7 Pro",
+            "productCode": "PIXEL7PRO",
+            "image": "google_pixel_7_pro.jpg",
+            "price": 899,
+            "sku": "GOPIX7P128GB",
+            "description": "The Google Pixel 7 Pro offers a clean Android experience and a powerful camera system.",
+            "specs": {
+              "display": "6.7-inch OLED",
+              "storage": "128GB storage",
+              "camera": "50MP main camera"
+            },
+            "features": [
+              "Google Tensor chip",
+              "Adaptive Battery",
+              "Android updates"
+            ],
+            "stock": 18
+          },
+          {
+            "id": 10,
+            "catId": 1,
+            "title": "Puma RS-X",
+            "productCode": "RSX",
+            "image": "puma_rsx.jpg",
+            "price": 110,
+            "sku": "PUMARSX-GREEN",
+            "description": "The Puma RS-X combines retro aesthetics with modern comfort for casual wear.",
+            "specs": {
+              "size": "Available in various sizes",
+              "color": "Green"
+            },
+            "features": [
+              "Bold design",
+              "Lightweight cushioning",
+              "Breathable materials"
+            ],
+            "stock": 40
+          },
+          {
+            "id": 11,
+            "catId": 3,
+            "title": "Samsung 65-Inch 4K QLED Smart TV",
+            "productCode": "QLED65",
+            "image": "samsung_4k_qled.jpg",
+            "price": 1499,
+            "sku": "SAMQLED65",
+            "description": "The Samsung 65-Inch 4K QLED Smart TV offers stunning visuals and immersive sound.",
+            "specs": {
+              "resolution": "4K UHD",
+              "refreshRate": "120Hz",
+              "features": "HDR, Smart Hub"
+            },
+            "features": [
+              "Quantum Dot technology",
+              "Dolby Atmos",
+              "Thin bezel design"
+            ],
+            "stock": 5
+          },
+          {
+            "id": 12,
+            "catId": 5,
+            "title": "Dell XPS 13 Laptop",
+            "productCode": "XPS13",
+            "image": "dell_xps_13.jpg",
+            "price": 1349,
+            "sku": "DELLXPS13-11THGEN",
+            "description": "The Dell XPS 13 is a sleek and powerful laptop with a near-borderless display.",
+            "specs": {
+              "processor": "11th Gen Intel Core i7",
+              "RAM": "16GB",
+              "storage": "512GB SSD"
+            },
+            "features": [
+              "InfinityEdge display",
+              "Compact design",
+              "All-day battery life"
+            ],
+            "stock": 10
+          },
+          {
+            "id": 13,
+            "catId": 4,
+            "title": "Samsung Double Door Refrigerator",
+            "productCode": "SAMDDF2025",
+            "image": "samsung_double_door_fridge.jpg",
+            "price": 749,
+            "sku": "SAMFR56789",
+            "description": "Samsung's Double Door Refrigerator offers high storage capacity and energy efficiency with its digital inverter technology.",
+            "specs": {
+              "capacity": "253 liters",
+              "type": "Double Door",
+              "energyRating": "5-star"
+            },
+            "features": [
+              "Digital Inverter Technology",
+              "Toughened Glass Shelves",
+              "Stabilizer-Free Operation"
+            ],
+            "stock": 20
+          },
+          {
+            "id": 14,
+            "catId": 4,
+            "title": "Whirlpool Frost Free Refrigerator",
+            "productCode": "WHIRLFFR2025",
+            "image": "whirlpool_frost_free_fridge.jpg",
+            "price": 679,
+            "sku": "WHIRL12345",
+            "description": "Whirlpool's Frost Free Refrigerator is equipped with Adaptive Intelligence to ensure optimal cooling and freshness.",
+            "specs": {
+              "capacity": "265 liters",
+              "type": "Frost Free",
+              "energyRating": "4-star"
+            },
+            "features": [
+              "Adaptive Intelligence Technology",
+              "Zeolite Technology",
+              "Fresh Flow Air Tower"
+            ],
+            "stock": 18
+          }
+    ]
+}
