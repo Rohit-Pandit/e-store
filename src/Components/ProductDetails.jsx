@@ -17,14 +17,13 @@ export default function ProductDetails() {
 
   return (
     <div className="product-details-container">
-      {/* Row 1: Image and Details */}
+     
       <div className="product-details-row">
-        {/* Column 1: Image */}
+        
         <figure className="product-details-image">
           <img src={`/assets/${product.data.image}`} alt={product.data.title} />
         </figure>
 
-        {/* Column 2: Details */}
         <div className="product-details-info">
           <h1 className="product-details-title">{product.data.title}</h1>
           <ul className="product-details-specs">
@@ -51,7 +50,7 @@ export default function ProductDetails() {
         </div>
       </div>
 
-      {/* Row 2: Price, Stock, and Add Button */}
+      
       <div className="product-details-row product-details-finance">
         <div className="product-details-price">
           &pound;{product.data.price}

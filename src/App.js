@@ -1,13 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
+
+import { getCategories } from './Components/Fetcher';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import ProductDetails from './Components/ProductDetails';
+import Basket from './Components/Basket';
+import Checkout from './Components/Checkout';
 import Category from './Components/Category';
-import { getCategories, getProducts } from './Components/Fetcher';
-import CategoryProducts from './Components/CategoryProducts';
+import Layout from './Components/Layout';
+import Home from './Components/Home';
 
 
 function App() {
-  const [categoriesU, setCategoriesU] = useState({errorMessage : '', data:[]});
-  const [productsU, setProductsU] = useState({errorMessage : '', data:[]});
+  const [categories, setCategories] = useState({errorMessage : '', data:[]});
 
   const hasFetched = useRef(false);
 
@@ -16,65 +21,28 @@ function App() {
       hasFetched.current = true; // Ensure fetch only runs once
       const fetchData = async()=>{
       const responseObj = await getCategories();
-      setCategoriesU(responseObj)
+      setCategories(responseObj)
       }
       fetchData();
     }
   }, []);
 
-  const categoryClickHandle = id =>{
-    const fetchData = async()=>{
-      const responseObj = await getProducts(id);
-      setProductsU(responseObj)
-      }
-      fetchData();
-  }
-  const renderCategory = ()=>{
-    //using for loop
-    const categories = categoriesU.data.length > 0 ? (
-      categoriesU.data.map((item) => (
-        <Category 
-          key={item.id} 
-          id={item.id} 
-          title={item.title} 
-          categoryClick={() => categoryClickHandle(item.id)} 
-        />
-      ))
-    ) : (
-      <p>No categories available</p>
-    );
-    
-    return categories;
-    
-    
-  }
 
-  const renderProduct = ()=>{
-  //using map
-      return productsU.data.map( p=>
-        <CategoryProducts key={p.id} {...p}>{p.title} </CategoryProducts>
-      )
-  }
+  
 
   return (
     <>
-    <header>My store</header>
-    <section>
-      <nav>
-        {categoriesU.errorMessage && <div> Error: {categoriesU.errorMessage}</div>}
-        {
-          categoriesU.data && renderCategory()
-        }
-      </nav>
-      <article>
-        <h1>Products</h1>
-        {productsU.errorMessage && <div> Error: {productsU.errorMessage}</div>}
-        { productsU.data && renderProduct()}
-      </article>
-    </section>
-    <footer>
-      footer
-    </footer>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <Layout categories={categories}/>}>
+          <Route index element={<Home/>}/>
+            <Route path='basket' element={<Basket/>}/>
+            <Route path='checkout' element={<Checkout/>}/>
+            <Route path='categories/:categoryId/products/:productId' element={<ProductDetails/>}/> 
+            <Route path='categories/:categoryId' element={<Category/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
     
   );

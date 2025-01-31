@@ -2,7 +2,7 @@ import React from 'react';
 import './CategoryProduct.css';
 import { Link, useNavigate } from 'react-router-dom';
 
-export default function CategoryProductItem({ id, title, image, specs, features, price, stock }) {
+export default function CategoryProducts({ id, title, image, specs, features, price, stock }) {
   const navigate = useNavigate();
 
   return (
