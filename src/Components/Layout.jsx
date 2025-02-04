@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import Home from './Home';
-import Basket from './Basket';
+// import Home from './Home';
+// import Basket from './Basket';
 
 export default function Layout({ categories }) {
   const renderCategory = () => {
@@ -36,7 +36,7 @@ export default function Layout({ categories }) {
       </section>
       
       <footer >
-      <Link to='/' style={{ color: "white", textDecoration: "none", margin: "0 10px" }}>Home</Link> | 
+      <Link to='/' style={{ color: "white", textDecoration: "none", margin: "0 10px"}}>Home</Link> | 
       <Link to='./Basket' style={{ color: "white", textDecoration: "none", margin: "0 10px" }}>Basket</Link>
       </footer>
     </>

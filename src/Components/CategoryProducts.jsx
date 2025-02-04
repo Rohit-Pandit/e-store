@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CategoryProduct.css';
 import { Link, useNavigate } from 'react-router-dom';
+import { CardContext } from '../Contexts/cardContext';
 
 export default function CategoryProducts({ id, title, image, specs, features, price, stock }) {
   const navigate = useNavigate();
+  const cardContext = useContext(CardContext);
+  const { addProduct } = cardContext;
 
   return (
     <article className="category-product-item">
@@ -43,7 +46,7 @@ export default function CategoryProducts({ id, title, image, specs, features, pr
         </div>
         <div className="category-product-item-action">
           <button onClick={() => navigate(`products/${id}`)}>View Product</button>
-          <button>Add Product</button>
+          <button onClick={()=>addProduct({id,title,price})}>Add Product</button>
         </div>
       </aside>
     </article>
