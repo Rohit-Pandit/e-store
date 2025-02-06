@@ -1,52 +1,100 @@
 .basket-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h1 {
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .basket-items {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .basket-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .basket-item-title a {
-    font-size: 18px;
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .basket-item-title a:hover {
-    text-decoration: underline;
-  }
-  
-  .basket-item-quantity,
-  .basket-item-price {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .empty-basket {
-    font-size: 18px;
-    color: #888;
-    margin-top: 20px;
-  }
-  
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+.empty-basket {
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.basket-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.basket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.basket-item-title {
+  flex: 2;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.basket-item-title:hover {
+  text-decoration: underline;
+}
+
+.basket-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qty-btn:hover {
+  background: #0056b3;
+}
+
+.basket-item-price {
+  flex: 1;
+  font-weight: bold;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #b02a37;
+}
+
+.checkout-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #218838;
+}

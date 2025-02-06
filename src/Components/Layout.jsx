@@ -1,7 +1,5 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
-// import Home from './Home';
-// import Basket from './Basket';
 
 export default function Layout({ categories }) {
   const renderCategory = () => {
