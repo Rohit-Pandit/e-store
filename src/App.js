@@ -7,16 +7,7 @@ import Content from './components/content/Content';
 
 function App() {
  
-  const [result,setResult] = useState("");
-
-  useEffect(()=>{
-       fetch("http://localhost:3001/categories")
-       .then(res => res.json())
-       .then(data=>{
-        console.log(data)
-        setResult(data)
-       })
-  },[])
+    const [products, setProducts] = useState([]);
 
   return (
     
@@ -25,10 +16,10 @@ function App() {
         <Header/>
       </div>
       <div className="menu">
-        <Menu/>
+        <Menu setProducts = {setProducts}/>
       </div>
       <div className="content">
-        <Content/>
+        <Content products={products}/>
       </div>
       <div className="footer">
         <Footer/>
