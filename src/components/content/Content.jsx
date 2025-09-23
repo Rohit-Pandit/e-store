@@ -11,9 +11,10 @@ const Content = ({products}) => {
     <div className="content">
       {products.map(p => (
         <div key={p.id} className="product-card">
-          <h3>{p.name}</h3>
+          <h3>{p.title}</h3>
           <p>Price: ${p.price}</p>
           <p>{p.description}</p>
+          <p>{p.stock}</p>
         </div>
       ))}
     </div>
