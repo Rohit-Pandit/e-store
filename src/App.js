@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Menu from './components/menu/Menu';
+import Content from './components/content/Content';
 
 function App() {
  
@@ -15,13 +19,22 @@ function App() {
   },[])
 
   return (
-    <>
-     <div>
-      {result && result.map(d=>(
-        <div key={d.id}>{d.title}</div>
-      ))}
+    
+     <div className='app'>
+      <div className="header">
+        <Header/>
+      </div>
+      <div className="menu">
+        <Menu/>
+      </div>
+      <div className="content">
+        <Content/>
+      </div>
+      <div className="footer">
+        <Footer/>
+      </div>
      </div>
-    </>
+   
     
   );
 }
