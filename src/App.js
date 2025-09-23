@@ -16,7 +16,11 @@ function App() {
 
   return (
     <>
-     <div></div>
+     <div>
+      {result && result.map(d=>(
+        <div key={d.id}>{d.title}</div>
+      ))}
+     </div>
     </>
     
   );
