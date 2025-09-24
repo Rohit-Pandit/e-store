@@ -1,4 +1,49 @@
-.footer{
-    background-color: bisque;
+.footer {
+  grid-area: f;
+  background: #222;              /* dark footer for contrast */
+  color: #fff;                   /* white text */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* content spread left-right */
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.logo {
+
+  font-size: 1.5;
+}
+.copyrights{
+    display: flex;
+    gap: 20px;  /* space between child2 and child3 */
+    justify-content: center;
+    flex: 1; 
+}
+.logo .click {
+  color: rgb(2, 2, 53);   /* yellow */
+}
+
+.logo .mart {
+  color: rgb(212, 92, 13);   /* cyan */
+}
+
+.footer .links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .links a:hover {
+  color: #4cafef; /* highlight on hover */
+}
+
+.footer .copy {
+  font-size: 0.8rem;
+  color: #aaa;
 }

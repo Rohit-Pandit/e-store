@@ -1,3 +1,20 @@
-.header{
-    background-color: aqua;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  
 }
+.img{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+.logo {
+    width: 11rem;
+    height: auto;
+}
+
+
+

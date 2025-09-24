@@ -1,10 +1,16 @@
-import React from 'react';
-import  './Header.css'
+
+import "./Header.css";
+
 
 const Header = () => {
   return (
-    <div className='header'>Header</div>
-  )
-}
+    <header className="header">
+      <div className="img">
+        <img src='./logo.png' alt="ClickMart Logo" className="logo" />
+      
+      </div>
+    </header>
+  );
+};
 
-export default Header
+export default Header;

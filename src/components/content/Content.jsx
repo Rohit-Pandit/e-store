@@ -13,6 +13,7 @@ const Content = ({products}) => {
         <div key={p.id} className="product-card">
           <h3>{p.title}</h3>
           <p>Price: ${p.price}</p>
+          <img src={`/assets/${p.image}`} alt="" />
           <p>{p.description}</p>
           <p>{p.stock}</p>
         </div>
