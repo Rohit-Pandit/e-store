@@ -4,7 +4,7 @@ import './Category.css'
 const Category = ({id,title,cateogryClick}) => {
   return (
     <div className='category' key={id} onClick={()=>cateogryClick()}>
-        {title}
+        <button id='title'>{title}</button>
     </div>
   )
 }

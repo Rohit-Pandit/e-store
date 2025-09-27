@@ -21,11 +21,11 @@
     flex: 1; 
 }
 .logo .click {
-  color: rgb(2, 2, 53);   /* yellow */
+  color: #fff  
 }
 
 .logo .mart {
-  color: rgb(212, 92, 13);   /* cyan */
+  color: rgb(212, 92, 13);  
 }
 
 .footer .links {
