@@ -8,14 +8,14 @@ const Content = ({products}) => {
     }
 
   return (
-    <div className="content">
+    <div className="content-product-list">
       {products.map(p => (
         <div key={p.id} className="product-card">
           <h3>{p.title}</h3>
-          <p>Price: ${p.price}</p>
           <img src={`/assets/${p.image}`} alt="" />
+          <p>Price: ${p.price}</p>
           <p>{p.description}</p>
-          <p>{p.stock}</p>
+          <p>Stock: {p.stock}</p>
         </div>
       ))}
     </div>
